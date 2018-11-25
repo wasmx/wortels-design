@@ -28,9 +28,9 @@ The numbers represent the order in which all the nodes where created, and the ev
 There are three types of nodes: ROOT, BRANCH, and LEAF. 
 
 ```
-NODE := ROOT </br>
-      | BRANCH </br>
-			| LEAF</br> 
+NODE := ROOT
+      | BRANCH
+      | LEAF
 ```
 
 ### ROOT
