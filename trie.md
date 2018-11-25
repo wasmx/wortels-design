@@ -19,7 +19,9 @@ The Trie is a binary trie where all leaf nodes have a uniform depth. For example
                    0   2   4   6    8   10  12   14
 
 ```
-
+Addresses are generated serially, and hence the Trie indices represent the order of address creation. </br>
+As a result of this property, all nodes with an even index are LEAF nodes. </br>
+Another benefit of sequential address generation is its inherent amenability to serialization in an append-only flat file format. </br> 
 The numbers represent the order in which all the nodes where created, and the even nodes are the leaf nodes.
 
 ## Node
