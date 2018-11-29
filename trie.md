@@ -24,20 +24,20 @@ As a result of this property, all nodes with an even index are LEAF nodes. </br>
 Another benefit of sequential address generation is its inherent amenability to serialization in an append-only flat file format. </br> 
 The numbers represent the order in which all the nodes where created, and the even nodes are the leaf nodes.
 
-## Node
+## Trie Nodes
 There are three types of nodes: ROOT, BRANCH, and LEAF. 
 
 ```
-NODE := ROOT </br>
-      | BRANCH </br>
-			| LEAF</br> 
+NODE := ROOT
+      | BRANCH
+      | LEAF
 ```
 
 ### ROOT
 A Trie has at most one ROOT node. The root node contains two elements: an "EDGE" and METADATA.
 
 ```
-ROOT := EDGE, METADATA;
+ROOT := (EDGE, METADATA)
 ```
 
 For now, "METADATA" just contains a single element, the trie's "HEIGHT" which is encoded as an LEB128 unsigned integer.
@@ -46,7 +46,7 @@ For now, "METADATA" just contains a single element, the trie's "HEIGHT" which is
 Each branch node contains two "EDGE" elements: "left EDGE", "right EDGE".
 
 ```
-BRANCH := EDGE, EDGE;
+BRANCH := (EDGE, EDGE)
 ```
 
 ### LEAF
