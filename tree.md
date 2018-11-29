@@ -1,5 +1,6 @@
 # Tree Specification
-This document specifies the structure of the wasmchain Tree.
+This document specifies the structure of the tree in Wortels.
+
 The Tree has features of [PPSP](https://tools.ietf.org/html/rfc7574#section-5.1) and [Merkle Mountain Ranges](https://github.com/mimblewimble/grin/blob/master/doc/mmr.md). The Tree differs from Ethereum's tree in that it does not store key/value entries. Instead, it only stores data at given integer indices.
 
 ## The Tree Structure
