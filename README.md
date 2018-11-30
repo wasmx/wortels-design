@@ -11,7 +11,7 @@ The goals are:
 - WebAssembly as an execution engine (this should focus on linking code)
 - Not to focus on compatibility with Ethereum's EVM
 
-The basic data structure for the tree is [explained here](./trie.md).
+The basic data structure for the tree is [explained here](./tree.md).
 
 ## Authors
 
